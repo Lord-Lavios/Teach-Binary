@@ -15,9 +15,12 @@ html, body, p, span, h1, h2 {
   letter-spacing: 2px; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #2AA3E9; }
+  a:visited {
+    color: #872F2F; }
 
-html {
+html, body {
   overflow-x: hidden; }
 
 p {
@@ -30,8 +33,8 @@ p {
   top: 50%;
   transform: translateY(-50%);
   margin-left: 240px;
-  -webkit-animation: fadein 3s forwards;
-  width: 560px; }
+  max-width: 560px;
+  -webkit-animation: fadein 3s forwards; }
 
 #outerhead {
   position: relative;
@@ -142,11 +145,12 @@ h3 {
 
 #lower-first, #lower-second-inside, #last, #newcolumn, #last-second-inside, #last-third-inside,
 #questions, #questions-second-inside, #memoryCalc, #questions-third-inside, #questions-fourth-inside,
-#questions-fivth-inside {
+#questions-fivth-inside, #ascitable-div {
   margin-top: 30px; }
 
 table {
-  margin: 0 auto; }
+  margin: 0 auto;
+  max-width: 100%; }
 
 th {
   font-size: 72px;
@@ -173,7 +177,11 @@ td {
 #memequal {
   opacity: 0; }
 
-#ascii-table th {
+#num, #char {
+  font-size: 72px;
+  font-weight: 100;
+  font-family: "Poiret One";
+  color: black;
   font-size: 32px;
   padding: 20px; }
 
@@ -197,3 +205,56 @@ td {
 
 #softwareBug {
   margin: 0px; }
+
+#ascii-table-one, #ascii-table-two {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 47%;
+  text-align: center; }
+
+@media (max-width: 1200px) {
+  #outer-inner {
+    margin-left: 100px;
+    width: 460px; }
+
+  #first-head {
+    font-size: 74px; } }
+@media (max-width: 650px) {
+  #center-column {
+    width: 85%; }
+
+  th {
+    font-size: 42px; }
+
+  #byte, #ascii-head, #twelve0, #denom, #memoryCalc, #memequal,
+  #coolstuff {
+    font-size: 11vw; }
+
+  #twelve0, #denom, #memoryCalc, #memequal, #floatingnum {
+    font-size: 9vw; }
+
+  #readbin, #complement, #patriotmissile {
+    font-size: 8vw; }
+
+  #num, #char {
+    font-size: 4.5vw; }
+
+  #outer-inner {
+    margin: 0 auto;
+    word-wrap: break-word;
+    width: 85%; }
+
+  #why {
+    word-wrap: break-word; }
+
+  #first-head, #sub-heading, #sub-para, #why {
+    width: 100%; } }
+@media (max-width: 510px) {
+  #first-head {
+    font-size: 12vw; }
+
+  th {
+    font-size: 7vw; }
+
+  td {
+    font-size: 4vw; } }
