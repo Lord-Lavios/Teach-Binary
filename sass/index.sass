@@ -1,0 +1,265 @@
+$red: #C62828
+$distance: 240px
+$lineheight: 20px
+$margintop: 30px
+
+=headfont()
+  font-size: 72px 
+  font-weight: 100 
+  font-family: 'Poiret One'
+  color: black
+
+@-webkit-keyframes fadein
+  0%
+    opacity: 0
+
+  100%
+    opacity: 1      
+
+//Aligns the whole page
+#center-column
+  margin: 0 auto
+  width: 70%
+  max-width: 680px
+  word-wrap: break-word
+
+html,body,p,span,h1,h2
+  margin: 0
+  padding: 0
+  letter-spacing: 2px
+
+a
+  text-decoration: none
+
+html,body
+  overflow-x: hidden
+
+p
+  letter-spacing: 1px
+  margin: 6px
+  line-height: 1.63em
+  font-family: 'Source Sans Pro', sans-serif
+
+#outer-inner
+  position: relative
+  top: 50%
+  transform: translateY(-50%)
+  margin-left: 240px
+  max-width: 560px
+  -webkit-animation: fadein 3s forwards
+
+#outerhead
+  position: relative
+  background-color: desaturate($red, 20)
+  z-index: -1
+  height: 100vh
+
+#first-head
+  font-size: 98px
+  margin-left: 10px
+  padding-top: 30px
+  font-family: 'Poiret One'
+  font-weight: 200
+  color: white
+  border-bottom: 2px solid white
+
+img
+  height: 720px
+  width: 1920px
+
+h3
+  padding-left: 10px
+  margin-bottom: 0px
+  color: white
+  font-size: 22px
+  font-family: 'Poiret One'
+
+#why
+  margin-left: 10px
+  width: 460px
+  color: white
+  font-size: 14px
+  letter-spacing: 1px
+  margin-top: 10px
+  line-height: 1.63em
+
+#one,#zero
+  display: inline
+  font-size: 1px
+  font-weight: 800
+
+#whynot
+  display: inline-block
+  font-weight: 800
+  font-size: 16px
+  width: 560px
+  overflow: hidden 
+  margin-bottom: 10px
+
+#zero
+  margin-left: 2px
+
+#mid-content
+  margin: 0 auto
+  width: 300px
+  margin-top: $margintop
+
+#content-inside
+  opacity: 0
+  text-align: center
+
+#binaryhead,#decimalhead,#example-head
+  +headfont
+
+#example-head
+  letter-spacing: 16px
+
+#decimalhead,#binaryhead
+  margin-bottom: 2px
+
+#binpara,#decpara
+  font-size: 18px
+
+#mid-lower,#asci 
+  margin-top: $margintop
+  //width: $width + 180px
+
+#exampledec,#examplebin,#bitsbyte
+  opacity: 0
+  margin-top: $margintop
+
+#addBinary
+  text-align: center
+  font-size: 20px
+  font-weight: 100
+
+#binary,#ascii-head
+  cursor: pointer
+
+#byte,#ascii-head,#twelve0,#denom,#memoryCalc,#memequal,#coolstuff
+  text-align: center
+  +headfont
+
+#coolstuff 
+  margin-top: 0px
+  margin-bottom: 30px
+
+#last-second-inside 
+
+  p:nth-child(3n)
+    cursor: pointer
+
+#questions-first-inside
+
+  p:nth-child(3n)
+    cursor: pointer
+
+#lower-first,#lower-second-inside,#last,#newcolumn,#last-second-inside,#last-third-inside,
+#questions,#questions-second-inside,#memoryCalc,#questions-third-inside,#questions-fourth-inside,
+#questions-fivth-inside,#ascitable-div    
+  margin-top: $margintop  
+
+table
+  margin: 0 auto  
+  max-width: 100%
+
+th
+  +headfont
+  width: 60px
+
+tr
+  text-align: center  
+
+#sub-table
+  font-size: 10px
+
+td
+  font-size: 18px   
+
+#hidetest,#testbinOne,#testbinTwo,#testbinThree,#testbinFour,#testbinFive
+  margin-top: $margintop  
+  cursor: pointer
+
+#testbinOneTable,#testbinTwoTable,#testbinThreeTable,
+#testbinFourTable,#testbinFiveTable,#hidetest,#newcolumn,#equation,#memoryCalc,#ascitable-div,
+#memequal
+  opacity: 0
+
+#num,#char
+  +headfont
+  font-size: 32px
+  padding: 20px  
+
+#twelve0,#denom,#memoryCalc,#memequal 
+  font-size: 48px 
+
+#twelve0
+  border-bottom: 1px solid black  
+
+#denom
+  margin-top: 0px    
+
+#floatingnum,#readbin,#complement,#patriotmissile 
+  +headfont
+  font-size: 42px
+  margin-top: 10px
+  margin-bottom: 30px
+
+#softwareBug
+  margin: 0px  
+
+#ascii-table-one,#ascii-table-two
+  display: inline-block
+  box-sizing: border-box
+  width: 47%
+  text-align: center
+
+@media (max-width: 1200px)
+  
+  #outer-inner
+    margin-left: 100px
+    width: 460px
+
+  #first-head
+    font-size: 74px
+
+@media (max-width: 650px)
+  #center-column
+    width: 85%
+
+  th        
+    font-size: 42px
+
+  #byte,#ascii-head,#twelve0,#denom,#memoryCalc,#memequal,
+  #coolstuff
+    font-size: 11vw  
+
+  #twelve0,#denom,#memoryCalc,#memequal,#floatingnum
+    font-size: 9vw  
+
+  #readbin,#complement,#patriotmissile
+    font-size: 8vw  
+
+  #num,#char
+    font-size: 4.5vw  
+
+  #outer-inner
+    margin: 0 auto 
+    word-wrap: break-word 
+    width: 85%
+
+  #why
+    word-wrap: break-word  
+
+  #first-head,#sub-heading,#sub-para,#why
+    width: 100%  
+
+@media (max-width: 510px)
+  #first-head
+    font-size: 12vw
+
+  th
+    font-size: 7vw
+
+  td     
+    font-size: 4vw

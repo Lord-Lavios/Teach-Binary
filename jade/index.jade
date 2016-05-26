@@ -1,0 +1,521 @@
+doctype html
+html
+    head
+        title Learn Binary
+        meta(name="viewport", content='width=device-width, initial-scale=1.0')
+        meta(name="theme-color", content="#ae4040")
+        meta(name="apple-mobile-web-app-status-bar-style", content="#ae4040") 
+        link(rel="stylesheet", href="css/index.css")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Poiret+One")   
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
+        script(type="text/javascript", src="/index.js")
+    body
+      #outerhead
+          #outer-inner
+                #heading
+                    h2#first-head Learn Binary
+                      span#one 1
+                      span#zero 0
+                #sub-heading
+                    h3 Why should you learn Binary?
+                #sub-para   
+                    p#why 
+                     span#whynot Why not?
+                     br
+                     Have Have you ever wondered how do the computers work? 
+                     br 
+                     How How do they store numbers?
+                     br
+                     What What causes "floating point precision problems"?
+                     br  
+                     Why Why does my hard drive shows 931GB instead of 1000GB, assuming it's a 1TB hard drive.
+                     br
+                     Why Why can't I use more than 4GB of RAM in 32bit Windows?    
+                    p#why After learning binary, you'll be able to answer them easily.
+                     br
+                     So So, let's get going!
+      #center-column           
+          #mid-content
+              #content-inside
+                    h2#binaryhead Binary
+                    p#binpara 0 1
+                    h2#decimalhead Decimal 
+                    p#decpara 0 1 2 3 4 5 6 7 8 9
+          #mid-lower
+             #mid-lower-inside
+                  p You probably already know this even if you're new to computer science that computers uses 0's and 1's. Computers use transistors as switches and a switch has two states, ON and OFF, ON creating a 1 and OFF creating a 0. So, basically computers speak the same language that we do but they have only 0's and 1's at there disposal. 
+                  p Fun fact! There are literally billions of transistors inside your laptop, smartphone etc. You can learn more about transistors 
+                     a(href="http://electronics.howstuffworks.com/transistor.htm" target="_blank") here.
+                  p You're probably are now wondering that how do they work with only two numbers?
+                  p Consider this, We humans use Decimal system that has 10 digits or Base 10, mentioned above. We represent numbers with their number places, One's, Ten's, Hundereds... and so on.
+                  p To represent 131 in decimal, We write 
+                     span 131 which works as 100 + 30 + 1
+             #exampledec
+              table
+                  thead
+                      tr
+                          th 1
+                          th 3
+                          th 1
+                  tbody
+                      tr
+                          td 100
+                          td 10 
+                          td 1
+                      tr
+                          td 10
+                             sup#sub-table ^2
+                          td 10
+                             sup#sub-table ^1
+                          td 10
+                             sup#sub-table ^0
+          #lower-first
+              #lower-first-inside
+                    p In Binary, we have only two digits 0 and 1 or Base 2 to represent numbers. So, the place values will be One's, Two's, Four's... and so on. It's the same concept as Decimal.
+              #examplebin
+                  table
+                      thead
+                          tr
+                              th 0
+                              th 0
+                              th 0
+                      tbody
+                          tr
+                              td 4
+                              td 2
+                              td 1
+                          tr
+                              td 2
+                                 sup#sub-table ^2
+                              td 2
+                                 sup#sub-table ^1
+                              td 2
+                                 sup#sub-table ^0   
+              #lower-second-inside 
+                  p So by this logic, I encourage you to think about how can you represent something simple like 2 in binary.
+                  p After giving it a shot, you can click below to change the value to 2.
+              #testbin
+                  table#hidetest
+                      thead
+                          tr
+                              th 0
+                              th 0
+                              th 0
+                      tbody
+                          tr
+                              td 4
+                              td 2
+                              td 1
+                          tr
+                              td 2
+                                 sup#sub-table ^2
+                              td 2
+                                 sup#sub-table ^1
+                              td 2
+                                 sup#sub-table ^0          
+          #last
+              #last-first-inside
+                  p It's now probably fairly intuitive to you. If it's not, no worries, you'll get it next time.
+                  p Every column can hold either 1 or 0. So, to write 2, we need two columns because the first column's maximum value is 1 because it's the one's place. The second column has the maximum value of 2 because it's the two's place. So, we put a 1 in the two's column and now the value is 2.
+                  p Below, there are 5 diagrams or whatever you want to call them, large font numbers?
+                  p Anyways, the first represent 3 in binary, then the next 4 and the last 7. You can click on it to reveal their values after giving it a shot.
+              #testbinOne
+                p This represents 3
+                  table#testbinOneTable           
+                      thead
+                          tr
+                              th 0
+                              th 0
+                              th 0
+                      tbody
+                          tr
+                              td 4
+                              td 2 
+                              td 1
+                          tr
+                              td 2
+                                 sup#sub-table ^2
+                              td 2
+                                 sup#sub-table ^1
+                              td 2
+                                 sup#sub-table ^0
+              #testbinTwo
+                 p This represents 4
+                    table#testbinTwoTable
+                        thead
+                              tr
+                                  th 0
+                                  th 0
+                                  th 0
+                          tbody
+                              tr
+                                  td 4
+                                  td 2 
+                                  td 1
+                              tr
+                                  td 2
+                                     sup#sub-table ^2
+                                  td 2
+                                     sup#sub-table ^1
+                                  td 2
+                                     sup#sub-table ^0
+              #testbinThree
+                 p This represents 5
+                    table#testbinThreeTable
+                      thead
+                          tr
+                              th 0
+                              th 0
+                              th 0
+                      tbody
+                          tr
+                              td 4
+                              td 2 
+                              td 1
+                          tr
+                              td 2
+                                 sup#sub-table ^2
+                              td 2
+                                 sup#sub-table ^1
+                              td 2
+                                 sup#sub-table ^0
+              #testbinFour 
+                p This represents 6
+                 table#testbinFourTable
+                      thead
+                          tr
+                              th 0
+                              th 0
+                              th 0
+                      tbody
+                          tr
+                              td 4
+                              td 2 
+                              td 1
+                          tr
+                              td 2
+                                 sup#sub-table ^2
+                              td 2
+                                 sup#sub-table ^1
+                              td 2
+                                 sup#sub-table ^0
+              #testbinFive  
+                p This represents 7
+                 table#testbinFiveTable
+                      thead
+                          tr
+                              th 0
+                              th 0
+                              th 0
+                      tbody
+                          tr
+                              td 4
+                              td 2 
+                              td 1
+                          tr
+                              td 2
+                                 sup#sub-table ^2
+                              td 2
+                                 sup#sub-table ^1
+                              td 2
+                                 sup#sub-table ^0  
+              #last-second-inside
+                p You probably now understand that how binary works and how simple it is. 
+                p Now, I need you to think about that how you might display 8 in binary. After giving it a shot, you can click on the next paragraph to decrypt it. 
+                p Vg'f fvzcyr, lbh jvyy whfg nqq nabgure pbyhza nsgre sbhe'f cynpr naq gung pbyhza jvyy unir gur cynpr inyhr bs rvtug'f.
+              #newcolumn
+                table
+                      thead
+                          tr
+                              th 1
+                              th 0
+                              th 0
+                              th 0
+                      tbody
+                          tr
+                              td 8
+                              td 4
+                              td 2
+                              td 1
+                          tr
+                              td 2
+                                 sup#sub-table ^3
+                              td 2
+                                 sup#sub-table ^2
+                              td 2
+                                 sup#sub-table ^1
+                              td 2
+                                 sup#sub-table ^0                          
+              #last-third-inside   
+                p You're Done! You now know how to display numbers in binary. There's a practice session below to make you even more comfortable with binary. Check it out after reading this section.
+                p Every column or place value is called a Bit and 8 bits are called a Byte.
+              #bitsbyte
+                h2#byte 1 Byte
+                table
+                  thead
+                      tr
+                          th 0
+                          th 0
+                          th 0
+                          th 0
+                          th 0
+                          th 0
+                          th 0
+                          th 0
+                  tbody
+                      tr
+                          td 128
+                          td 64
+                          td 32
+                          td 16
+                          td 8
+                          td 4
+                          td 2
+                          td 1  
+                      tr
+                          td 1 Bit
+                          td 1 Bit
+                          td 1 Bit
+                          td 1 Bit
+                          td 1 Bit
+                          td 1 Bit
+                          td 1 Bit
+                          td 1 Bit                                                 
+          #asci
+            #asic-first-inside
+              p The Next Thing! You're probably are now wondering that how does the computer displays alphabets and more?
+              p Many years ago, In computer world, people adopted a method that maps numbers to letters. This is called ASCII(American Standard Code for Information Interchange) and it is just a table that maps numbers to alphabets.
+              p Below there's a ASCII table of some common used characters. You can check all of them 
+                  a(href="http://www.w3schools.com/charsets/ref_html_ascii.asp" target="_blank") here.
+              p You can click on the header (ASCII) to hide/unhide the table.    
+            #ascitable-div
+              h2#ascii-head ASCII
+              #ascii-table-one
+                h2#num Numbers
+                p 65
+
+                p 66
+
+                p 67
+
+                p 68
+
+                p 69
+
+                p 70
+
+                p 71
+
+                p 72  
+
+                p 73  
+
+                p 74  
+
+                p 75  
+
+                p 76  
+
+                p 77  
+
+                p 78  
+
+                p 79  
+
+                p 80  
+
+                p 81  
+
+                p 82  
+
+                p 83  
+
+                p 84  
+
+                p 85  
+
+                p 86  
+
+                p 87  
+
+                p 88  
+
+                p 89  
+
+                p 90  
+              #ascii-table-two  
+                h2#char Characters   
+                p Uppercase A
+
+                p Uppercase B
+
+                p Uppercase C
+
+                p Uppercase D
+
+                p Uppercase E
+
+                p Uppercase F
+
+                p Uppercase G
+
+                p Uppercase H
+
+                p Uppercase I
+
+                p Uppercase J
+
+                p Uppercase K
+
+                p Uppercase L
+
+                p Uppercase M
+
+                p Uppercase N
+
+                p Uppercase O
+
+                p Uppercase P
+
+                p Uppercase Q
+
+                p Uppercase R
+
+                p Uppercase S
+
+                p Uppercase T
+
+                p Uppercase U
+
+                p Uppercase V
+
+                p Uppercase W
+
+                p Uppercase X
+
+                p Uppercase Y
+
+                p Uppercase Z
+          #questions
+            #questions-first-inside
+               p So, I previously told you that 8bits are called a Byte. There's a bit more to that, 1024Bytes are called a Kilobyte(KB) and 1024KB are called a Megabyte(MB) and 1024MB are called a Gigabyte(GB) and 1024GB are called a Terabyte(TB) and so on. You can check out all of them 
+                 a(href="http://www.wu.ece.ufl.edu/links/dataRate/DataMeasurementChart.html", target="_blank") here.
+               p Now, I encourage you to think about the answer to the question proposed above "Why does my hard drive shows 931GB instead of 1000GB, assuming it's a 1TB hard drive.". Hint - Companies advertise hard drives as 1TB which means 1000GB but computer don't work that way. After giving it a shot, you can click below to decrypt the answer.  
+               p
+                  | Gur uneq qevir unf 1000TO nf nqiregvfrq ohg pbzchgre pnyhyngrf vg va gur cbjre bs 2
+                  | . Fb, 1000TO pbairegrq vagb Olgrf vf 1r+12(1 gura 12 mrebf nsgre gung) naq ol qvivqvat
+                  | vg ol gur ynetrfg cbjre bs 2 gung pna svg va 1000TO juvpu vf 1024
+                  sup  ^3
+                  |  be 2^
+                  sup  30
+                  |   juvpu erfhyg va gur nafjre 931TO.
+               p 
+                  |Now you can understand this joke! In December 2014, Google made a joke that 
+                  a(href='https://www.youtube.com/watch?v=9bZkp7q19f0',target='_blank') Gangnam Style by Psy
+                  |  broke the Youtube's counter because they didn't thought that any video will ever cross the maximum possible views which is the max value of 32bit integer which is 2,147,483,647. The had already saw this coming and chaged it to 64bit integer which has the max value of 9,223,372,036,854,775,807!        
+            #equation
+               h3#twelve0 1000000000000
+               h3#denom 
+                 | 1024
+                 sup ^3
+            #questions-second-inside 
+                 p 
+                   | This is the same thing that happens with the question "Why can't I use more than 4GB of RAM or even 4GB in a 32bit windows" but just a little different. It's gonna be a little complicated, if you don't know anything about memory in computers.
+                   br
+                   | So, here we go, When you open up a program that program gets loaded into memory(RAM) and a memory address is assigned to it. You can convert 4GB of memory in bytes to see how many address it can hold which turns out to be 4 * 2
+                   sup ^30
+                   | and every address is 4Bytes long, it depends on the operating system. A memory address is the location of where the program is stored and memory addresses are also just made up of bytes. So, the first limit is that the number of addresses are limited on the amount of memory you have stored.
+            #memorysize
+                 h3#memoryCalc 
+                   | 4 * 2
+                   sup ^30
+                   |  = 4294967296
+            #questions-third-inside 
+                 p
+                   | Now, assuming the CPU is 32 bit, there is nothing as 32bit, 64bit CPU nowdays, they are just an instruction set. The CPU now needs to access those memory address that has the program to do the calulations. Now comes the second limit, a 32bit CPU/OS(Operating System) can only assign a max of
+                   br
+                   | 2
+                   sup ^32
+                   |  - 1(because the addresses starts from 0) different addresses and this is called machine word.
+               #equalMem
+                 h3#memequal 
+                   | 2
+                   sup ^32
+                   |  = 4294967296 
+            #questions-fourth-inside
+                p
+                   | Now, addresses and the bytes are the same 4 * 2
+                   sup ^30
+                   |  =  2 
+                   sup ^32
+                   |. Now, you might be thinking that computer can now store 4GB of RAM right?. Yeah, theoritrically but in the real world there are other components who needs some RAM like the graphic card. So, after assigning everybody the RAM that they require, computer only sees the RAM that is left which in turn is less than 4GB. 
+                p There are ways to overcome this known as Physical Address Extension. You can check it out 
+                   a(href="http://everything.explained.today/Physical_Address_Extension/",target='_blank') here.
+                p There's also a thing known as Virtual memory which you can check out 
+                   a(href='http://computer.howstuffworks.com/virtual-memory.htm', target='_blank') here.            
+            #questions-fivth-inside
+                h3#coolstuff Cool Stuff
+                h4#floatingnum Floating Numbers
+                iframe(width="100%", height='300' src="https://www.youtube.com/embed/PZRI1IfStY0?rel=0" frameborder="0",allowfullscreen)
+                h4#readbin Reading text in Binary   
+                iframe(width="100%", height='300' src="https://www.youtube.com/embed/wCQSIub_g7M?rel=0", frameborder="0", allowfullscreen)
+                p 
+                  | 00011001 00001111 00010101 00000000 00000001 00010010 00000101 00000000 00000001 00010111 00000101 00010011 00001111 00001101 00000101      
+                h4#complement Storing negative numbers
+                iframe(width="100%", height='300' src="https://www.youtube.com/embed/lKTsv6iVxV4?rel=0;", frameborder="0", allowfullscreen)
+                h4#patriotmissile Software problem that killed 28 U.S soldiers. 
+                iframe(width="100%", height='300', src="https://www.youtube.com/embed/tWc4gGMQ3hQ?rel=0", frameborder="0", allowfullscreen)
+                p#softwareBug
+                  a(href='http://sydney.edu.au/engineering/it/~alum/patriot_bug.html',target='_blank') Expalined in more detail  
+          #webApp
+            p#practice Practice App
+              #cards
+                  #card-one
+                    p#val 0
+                  #card-two
+                    p#val 0
+                  #card-three
+                    p#val 0
+                  #card-four
+                    p#val 0
+                  #card-five
+                    p#val 0
+                  #card-six
+                    p#val 0
+                  #card-seven
+                    p#val 0
+                  #card-eight
+                    p#val 0
+              #values
+                  #value-card-one
+                    p 128  
+                  #value-card-two
+                    p 64
+                  #value-card-three
+                    p 32
+                  #value-card-four
+                    p 16
+                  #value-card-five
+                    p 8
+                  #value-card-six
+                    p 4
+                  #value-card-seven
+                    p 2
+                  #value-card-eight
+                    p 1
+            #webApp-inside 
+                #webApp-inside-first  
+                    p#streak 
+                       |Current Streak: 
+                       span#streaknum 0
+                #webApp-inside-second
+                  #webApp-inside-second-first
+                    p#numberTest 
+                       |Enter 
+                       span#thenumber
+                       |  in binary   
+                  #webApp-inside-second-second     
+                    button Submit   
+                p#Score
+                   |Highest Streak: 
+                   span#highScore 0
