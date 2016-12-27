@@ -9,7 +9,7 @@ $margintop: 30px
   font-family: 'Poiret One'
   color: black
 
-@-webkit-keyframes fadein
+@keyframes fadein
   0%
     opacity: 0
 
@@ -30,6 +30,7 @@ html,body,p,span,h1,h2
 
 a
   text-decoration: none
+  color: #158cf0
 
 html,body
   overflow-x: hidden
@@ -46,7 +47,7 @@ p
   transform: translateY(-50%)
   margin-left: 240px
   max-width: 560px
-  -webkit-animation: fadein 3s forwards
+  animation: fadein 3s forwards
 
 #outerhead
   position: relative
@@ -136,7 +137,7 @@ h3
 #binary,#ascii-head
   cursor: pointer
 
-#byte,#ascii-head,#twelve0,#denom,#memoryCalc,#memequal,#coolstuff
+#byte,#ascii-head,#twelve0,#denom,#memoryCalc,#memequal,#coolstuff, #practice
   text-align: center
   +headfont
 
@@ -159,6 +160,9 @@ h3
 #questions-fivth-inside,#ascitable-div    
   margin-top: $margintop  
 
+#cards
+	text-align: center
+
 table
   margin: 0 auto  
   max-width: 100%
@@ -174,7 +178,8 @@ tr
   font-size: 10px
 
 td
-  font-size: 18px   
+  font-size: 18px
+  font-family: 'Source Sans Pro', sans-serif
 
 #hidetest,#testbinOne,#testbinTwo,#testbinThree,#testbinFour,#testbinFive
   margin-top: $margintop  
@@ -213,6 +218,69 @@ td
   box-sizing: border-box
   width: 47%
   text-align: center
+
+#cards, #values, #webApp-inside-first
+	display: flex
+
+#correctandwrong, #softwareBug
+	text-align: center
+
+#webApp-inside-first
+	justify-content: space-between
+	align-items: center
+	margin-top: 4px
+
+	button
+		height: 27px
+		border: 1px solid #158cf0
+		letter-spacing: 1.42px
+		font-size: 14px
+		color: white
+		background-color: #158cf0
+		padding: 4px 12px
+
+#streak, #numberTest
+	font-family: Poiret One
+	font-weight: 800
+
+#thenumber
+	color: #158cf0
+
+#Score
+	text-align: center
+	font-family: Poiret One
+	font-size: 1.8rem
+
+#card-eight, #card-five, #card-four, #card-one, #card-seven, #card-six, #card-three, #card-two
+	border: 1px solid black
+	color: white
+	cursor: pointer
+	background-color: black
+	height: 180px
+	width: 12.5%
+	margin-right: 2px
+
+#value-card-eight, #value-card-five, #value-card-four, #value-card-one, #value-card-seven, #value-card-six, #value-card-three, #value-card-two
+	font-weight: 100
+	font-family: Poiret One
+	width: 12.5%
+
+	p
+		font-family: Poiret One
+		font-weight: 800
+		font-size: 22px
+		margin: 0px
+		padding-left: 12px
+		text-align: center
+
+#val
+	position: relative
+	top: 50%
+	transform: translateY(-50%)
+	font-size: 3.6em
+	font-weight: 100
+	font-family: Poiret One
+
 
 @media (max-width: 1200px)
   
